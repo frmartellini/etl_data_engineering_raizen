@@ -32,7 +32,7 @@ from subprocess import Popen
 response = Popen(['soffice', '--headless', '--convert-to', 'xls', '--outdir', 'raw', 'raw_data.xls'])
 ```
 
-However, I find some problems to using my local installation of Libre Office inside the Jupyter container. A possibel solution is use some docker image for Libre Office, meanwhile, the extract and convert process is made by shell script, using my local installation to generate the file that will be loaded to the Jupyter Notebook.
+However, I find some problems to using my local installation of Libre Office inside the Jupyter container. A possible solution is use some docker image for Libre Office, meanwhile, the extract and convert process is made by shell script, using my local installation to generate the file that will be loaded to the Jupyter Notebook.
 
 Another improvement is use Airflow to automate the ETL process. This change will be added soon, as part of my self-learning process from Airflow.
 
